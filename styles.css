@@ -88,8 +88,6 @@ main {
 
 footer {
     background-color: white;
-    padding-left: 50px;
-    padding-right: 50px;
 }
 
 a {
@@ -174,7 +172,7 @@ a {
 }
 
 .search-input input {
-    margin-left: 17px;
+    padding-left: 17px;
     font-weight: 700;
     font-size: 18px;
     border: 1px solid #F2F2F2;
@@ -191,10 +189,11 @@ a {
 }
 
 .search-button {
-    width: 132px;
     background: #0065FC;
     border-radius: 0 15px 15px 0;
     text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .search-text {
@@ -210,11 +209,11 @@ a {
 }
 
 .filters {
-    margin-left: 62px;
+    margin-left: 60px;
 }
 
 .container-filter {
-    width: 914px;
+    width: 75%;
 }
 
 .container-filter h2 {
@@ -231,14 +230,11 @@ a {
 .container-filter button {
     font-weight: 700;
     font-size: 17px;
-    width: 100%;
     border-radius: 25px;
     padding-top: 14px;
     padding-bottom: 14px;
     padding-left: 20px;
     padding-right: 20px;
-    height: auto;
-    margin: auto;
     background-color: white;
     border: 2px solid #f2f2f2;
 }
@@ -248,11 +244,9 @@ a {
 }
 
 .container-filter .buttons {
-    margin-left: 32px;
-    width: 100%;
+    flex: 1 0 100%;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .info-logo i::before {
@@ -284,15 +278,15 @@ a {
 
 .container-hebergements {
     width: 100%;
-    height: 626px;
     flex-direction: row;
     margin-top: 30px;
 }
 
+
+
 .limit-cards {
+    width: 70%;
     flex-wrap: wrap;
-    flex-direction: column;
-    width: 855px;
     height: auto;
     background-color: #F2F2F2;
     border-radius: 20px;
@@ -309,21 +303,20 @@ a {
     height: 26px;
 }
 
-.cards-family3 {
-    flex-flow: row;
-    justify-content: space-between;
-    margin-left: 40px;
-    margin-right: 40px;
-    margin-bottom: 20px;
-    margin-top: 20px;
+
+.container-cards-hebergements {
+    flex-wrap: wrap;
+    margin: 10px 20px auto 20px;
+
 }
 
-.cards-family6 {
-    flex-flow: row;
-    justify-content: space-between;
-    margin-left: 40px;
-    margin-right: 40px;
-    margin-bottom: 20px;
+.link-card {
+    flex: 1 0 25%;
+    background: white;
+    margin: 0.5rem;
+    border-radius: 20px;
+    border: 5px solid white;
+    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
 }
 
 .bg-form {
@@ -331,59 +324,42 @@ a {
     background-position-y: 40%;
 }
 
-.card-form a {
-    width: 97.97%;
-}
 
 .card-img {
-    width: 97.97%;
-    height: 62.31%;
-    border-radius: 20px 20px 0 0;
-    border: 5px solid #ffffff;
+    height: 140px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
 }
 
-.card-form {
-    flex: 0 1 246px;
-    height: 199px;
-    background: white;
-    border-radius: 20px;
-    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
-}
 
 .container-card {
-    flex-direction: column;
-    width: auto;
-    height: auto;
-    padding-left: 16px;
-    border-end-start-radius: 20px;
-    border-end-end-radius: 20px;
-    background-color: white;
+    margin-left: 10px;
 }
 
 .container-card h3 {
     font-weight: 700;
     font-size: 16px;
     color: #000000;
-    margin: 0;
+    margin: 5px auto 3px auto;
 }
 
 .container-card p {
     font-weight: 400;
     font-size: 14px;
     color: #000000;
-    margin: 0;
+    margin: 0 auto 9px auto;
 }
 
 .container-card .four-stars {
-    padding-top: 9px;
+    margin-bottom: 5px;
 }
 
 .four-stars .fa-star:hover {
-    color: red;
+    color: #0065FC;
 }
 
 .four-stars .fa-star:hover~.fa-star {
-    color: red;
+    color: #0065FC;
 }
 
 .four-stars {
@@ -408,12 +384,12 @@ a {
 
 
 .limit-cards-hor {
-    width: 408px;
+    width: 30%;
     height: auto;
     background-color: #F2F2F2;
     border-radius: 20px;
+    margin-left: 30px;
     margin-right: 50px;
-    margin-left: 40px;
 }
 
 .titre-pop {
@@ -432,33 +408,27 @@ a {
     color: #0065FC;
 }
 
-.cards-family-hor {
+.container-cards-horizontal {
     flex-direction: column;
-    justify-content: space-between;
-    width: auto;
-    height: 79.55%;
-    margin-top: 6px;
+    width: 100%;
 }
 
-.card-hor {
-    flex: 0 1 343px;
-    height: 144px;
+.link-card-hor {
+    flex: 1 0 100%;
     background: white;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    height: auto;
     border-radius: 20px;
-    margin-left: 37px;
-    margin-right: 40px;
-    margin-bottom: 21px;
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
 
 }
 
-.card-hor a {
-    height: 100%;
-}
 
 .card-img-hor {
-    width: 38.53%;
-    height: 93.06%;
+    width: 50%;
+    height: 134px;
     border-radius: 20px 0 0 20px;
     border: 5px solid white;
 }
@@ -469,8 +439,7 @@ a {
 }
 
 .container-card-hor {
-    width: 53.45%;
-    height: auto;
+    width: 60%;
     background-color: white;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
@@ -502,10 +471,9 @@ a {
     color: black;
 }
 
-.limit-cards-vert {
+.container-cards-vertical {
     margin-top: 50px;
     flex-direction: column;
-    height: 493px;
     margin-left: 50px;
     margin-right: 50px;
     margin-bottom: 50px;
@@ -514,25 +482,26 @@ a {
 .cards-family-vert {
     justify-content: space-between;
     width: 100%;
-    height: 90.16%;
 }
 
-.card-vert {
-    width: 22.59%;
+.link-card-vert {
+    width: 20%;
     height: 100%;
+    background: white;
     border-radius: 20px;
-    background-color: white;
+    border: 5px solid white;
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
 }
 
+
 .card-img-vert {
-    width: 100%;
-    height: 87.51%;
+    height: 380px;
     border-radius: 20px 20px 0 0;
 }
 
 .container-card-vert {
-    height: 12.6%;
+    min-height: 56px;
+    height: 10%;
     text-align: start;
     margin-left: 15px;
 }
@@ -544,15 +513,17 @@ a {
 }
 
 .limit-footer {
-    width: 100%;
+    width: auto;
+    margin-left: 50px;
+    margin-right: 50px;
     background: #f2f2f2;
 }
 
 .row-footer {
-    width: 70.64%;
-    height: 225px;
+    width: 70%;
     justify-content: space-between;
-    margin-left: 65px;
+    padding-bottom: 50px;
+    margin-left: 50px;
 }
 
 .row-footer h3 {
@@ -581,470 +552,140 @@ a {
         max-width: 991px;
     }
 
-    main {
-        padding-left: 50px;
-        padding-right: 50px;
-    }
-
-    .navbar-logo {
-        margin-right: 0;
-        margin-top: 48px;
-    }
-
-    .intro {
-        margin-left: 0;
-    }
-
-    .search-bar {
-        padding-bottom: 20px;
-    }
-
-    .filters {
-        margin-left: 0;
-    }
-
     .container-filter {
-        width: 100%;
-    }
-
-    .container-filter .buttons {
-        margin-left: 17px;
-        margin-right: 40px;
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-    }
-
-    .container-filter button {
-        font-weight: 700;
-        font-size: 17px;
-        width: auto;
-        border-radius: 25px;
-        padding-top: 14px;
-        padding-bottom: 14px;
-        padding-left: 20px;
-        padding-right: 20px;
-        height: auto;
-        background-color: white;
-        border: 2px solid #f2f2f2;
+        width: 90%;
     }
 
     .container-hebergements {
-        width: 100%;
-        height: auto;
         flex-direction: column;
-        margin-top: 30px;
     }
 
     .limit-cards {
         width: auto;
-        height: 626px;
-        margin: 0;
-        margin-bottom: 50px;
-    }
-
-    .limit-cards h2 {
-        margin-bottom: 23px;
-    }
-
-    .titre-pop h2 {
-        margin-left: 15px;
-    }
-
-    .titre-pop i {
-        margin-right: 10px;
-    }
-
-    .cards-family {
-        align-content: space-between;
+        margin: auto 50px auto 50px;
     }
 
     .limit-cards-hor {
         width: auto;
-        height: 29.05%;
-        margin: 0;
-        padding-left: 30px;
-        padding-right: 30px;
-        padding-bottom: 30px;
+        margin-left: 50px;
+        margin-top: 50px;
+        padding-bottom: 35px;
     }
 
-    .cards-family-hor {
+    .container-cards-horizontal {
         flex-direction: row;
-        align-content: start;
-        justify-content: space-around;
-        width: 100%;
-        height: 51.80%;
-    }
-
-    .card-hor {
-        width: 31.42%;
-        height: 144px;
-        margin: 0;
-        border-radius: 20px;
-    }
-
-    .card-img-hor {
-        width: 38.10%;
-        height: 93.06%;
-        border-radius: 20px 0 0 20px;
-        border: 5px solid white;
-    }
-
-    .container-card-hor {
-        width: 60.33%;
-    }
-
-    .limit-cards-vert {
-        margin: 0;
-        margin-bottom: 0px;
-        height: 331px;
-    }
-
-    .cards-family-vert {
-        justify-content: space-between;
-        width: 100%;
-        height: 267px;
-    }
-
-    .limit-cards-vert h2 {
+        width: auto;
         margin-left: 15px;
+        margin-right: 15px;
     }
 
-    .card-vert {
-        width: 20.73%;
-        height: 267px;
+
+    .link-card-hor {
+        flex: 1 0 25%;
+        background: white;
+        margin-left: 0;
+        height: auto;
         border-radius: 20px;
-        background-color: white;
+        filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+    }
+
+    .link-card-vert {
+        width: 100%;
+        margin: 0.5rem;
+        background: white;
+        border-radius: 20px;
+        border: 5px solid white;
         filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
     }
 
     .card-img-vert {
-        width: 100%;
-        height: 79.03%;
-        border-radius: 20px 20px 0 0;
+        height: 211px;
+    }
+
+    .container-cards-vertical {
+        margin-left: 50px;
+        margin-right: 50px;
+        flex-direction: column;
     }
 
     .container-card-vert {
-        height: 12.6%;
-        text-align: start;
-        margin-left: 0;
-    }
-
-    .container-card-vert h3 {
-        margin: auto;
-        font-weight: 700;
-        font-size: 16px;
-        color: black;
-    }
-
-    .limit-footer {
-        margin-top: 62px;
+        min-height: 56px;
     }
 }
 
-@media screen and (max-width: 767px) {
+@media (max-width: 767px) {
     body {
         max-width: 767px;
+        background-color: white;
+        margin: auto;
     }
-
-    main {
+    main{ 
         width: 100%;
-        padding: 0;
-    }
-
-    footer {
-        padding-left: 0;
-        padding-right: 0;
-    }
-
-    .navbar {
-        flex-direction: column;
     }
 
     .navbar-logo {
-        margin-right: auto;
-        margin-top: auto;
-        margin-left: auto;
-        margin-bottom: auto;
+        margin: auto;
+        margin-top: 48px;
     }
-
+    
     .ms-auto {
-        margin-left: 0;
+        margin: auto;
     }
-
-    .ms-auto li:hover {
-        border-top: none;
-        border-bottom: 2px solid blue;
-    }
+    
     .navbar {
+        flex-direction: column;
         padding-bottom: 20px;
     }
-
+    
     .navbar img {
-        width: 61.09px;
+        width: 61px;
         height: 19px;
-        margin: auto;
-        padding-top: 20px;
+        margin: auto 0 0 55px;
     }
-
+    
     .navbar ul {
         display: flex;
-        margin: auto;
-        text-align: center;
+        margin: auto auto 0 auto;
         list-style-type: none;
-        padding-left: 0;
-        padding-right: 0;
     }
-
+    
     .navbar li {
-        flex: 1;
-        margin: auto;
-        margin-top: 50px;
+        margin-right: 77px;
         font-weight: 400;
-        font-size: 16px;
-        padding-bottom: 23px;
-        border-bottom: 3px solid #f2f2f2;
-    }
-
-    .navbar li:hover{ 
-        border-bottom: 3px solid #0065FC;
-    }
-
-
-
-    .intro {
-        padding-left: 20px;
-        padding-right: 20px;
-        flex-direction: column;
-    }
-
-
-    .search-logo {
-        display: contents;
-    }
-
-    .search-logo i {
-        color: white;
-        font-size: 16px;
-        margin: auto;
-    }
-
-    .search-input input {
-        width: 232px;
-        margin-left: 17px;
-        font-weight: 700;
-        font-size: 18px;
-        border: 1px solid #F2F2F2;
-    }
-
-    .search-button {
-        width: 49px;
-        background: #0065FC;
-        border-radius: 0 15px 15px 0;
-        text-align: center;
-    }
-
-    .search-text {
-        display: none;
-    }
-
-    .container-filter {
-        margin-left: 0;
-        margin-right: 0;
-        padding-left: 20px;
-        padding-right: 20px;
-        flex-direction: column;
-        width: 335px;
-    }
-
-    .container-filter h2 {
-        margin-left: 0px;
-    }
-
-    .container-filter .buttons {
-        margin-left: 0;
-        margin-right: 0;
-        width: 335px;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-    }
-
-    .container-filter button {
-        font-weight: 700;
-        font-size: 11px;
-        width: 160px;
-        border-radius: 25px;
-        padding-top: 14px;
-        padding-bottom: 14px;
-        padding-left: 10px;
-        padding-right: 10px;
-        text-align: start;
-        height: auto;
-        margin: auto;
-        background-color: white;
-        border: 2px solid #f2f2f2;
-    }
-
-    .bouton {
-        margin-bottom: 17px;
-    }
-
-    .info-all {
-        margin-left: 20px;
-    }
-
-    .container-hebergements {
-        flex-direction: column-reverse;
-    }
-
-    .limit-cards-hor {
-        width: 335px;
-        border-radius: 0;
-        padding-left: 20px;
-        padding-right: 21px;
-    }
-
-    .titre-pop h2 {
-        margin-left: 0;
-    }
-
-    .titre-pop i {
-        margin-right: 5px;
-    }
-
-    .cards-family-hor {
-        margin-top: 0;
-        flex-direction: column;
-        justify-content: space-between;
-        align-content: space-between;
-        padding-bottom: 20px;
-    }
-
-    .card-hor {
-        flex: 0 1 144px;
-        width: auto;
-        height: 144px;
-        margin-top: 11px;
-    }
-
-    .limit-cards {
-        margin-left: 20px;
-        margin-right: 20px;
-        width: 335px;
-        height: auto;
-        flex-direction: row;
-        flex-wrap: wrap;
-        background-color: white;
-    }
-
-    .limit-cards h2 {
-        margin-left: 0;
-    }
-
-    .cards-family3 {
-        flex-flow: row wrap;
-        justify-content: start;
-        margin-left: 0px;
-        margin-right: 0px;
-        margin-bottom: 0px;
-        margin-top: 0px;
-    }
-
-    .cards-family6 {
-        flex-flow: row wrap;
-        justify-content: space-between;
-        margin-left: 0px;
-        margin-right: 0px;
-        margin-bottom: 20px;
-    }
-
-    .card-img {
-        width: 97.97%;
-        height: 62.31%;
-        border-radius: 20px 20px 0 0;
-        border: 5px solid #ffffff;
-    }
-
-    .card-form {
-        flex: 0 1 335px;
-        height: 199px;
-        background: white;
-        border-radius: 20px;
-        margin-bottom: 12px;
-        filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
-    }
-
-    .cards-textfin {
-        display: none;
-    }
-
-    .limit-cards-vert {
-        width: 335px;
-        margin-left: 22px;
-        height: auto;
-    }
-
-    .limit-cards-vert h2 {
-        margin-left: 0;
-    }
-
-    .cards-family-vert {
-        flex-direction: column;
-        justify-content: space-between;
-        width: 100%;
-        height: 90.16%;
-    }
-
-    .card-vert {
-        width: 334px;
-        height: 190px;
-        border-radius: 20px;
-        margin-bottom: 24px;
-        background-color: white;
-        filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
-    }
-
-    .card-img-vert {
-        width: 100%;
-        height: 134px;
-        border-radius: 20px 20px 0 0;
-    }
-
-    .container-card-vert {
-        height: 56px;
-        text-align: start;
-        margin-top: 20px;
-        margin-bottom: 20px;
-        margin-left: 15px;
-    }
-
-    .container-card-vert h3 {
-        font-weight: 700;
         font-size: 16px;
         color: black;
     }
-
-    .fort {
-        background-position-y: 50%;
+    
+    .ms-auto li:hover {
+        border-top: 2px solid blue;
+        color: blue;
     }
 
-    .parc {
-        background-position-y: 20%;
+    .filters{ 
+        width: 100%;
+        margin: auto;
     }
-
-    .limit-footer {
-        width: 335px;
-        padding-right: 20px;
-        padding-left: 20px;
-        background: #f2f2f2;
-    }
-
-    .row-footer {
-        width: 335px;
-        margin-left: 0;
-        height: auto;
+    .container-filter{ 
         flex-direction: column;
+        margin: auto;
+    }
+    .container-filter .buttons {
+        flex: 1 0 100%;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .container-filter button {
+        width: 160px;
+        text-align: start;
+        font-weight: 700;
+        font-size: 17px;
+        border-radius: 25px;
+        padding-top: 14px;
+        padding-bottom: 14px;
+        padding-left: 20px;
+        padding-right: 20px;
+        background-color: white;
+        border: 2px solid #f2f2f2;
     }
 }
