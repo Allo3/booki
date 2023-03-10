@@ -114,7 +114,7 @@ a {
 }
 
 .navbar img {
-    width: 61.09px;
+    width: 61px;
     height: 19px;
     margin: auto 0 0 55px;
 }
@@ -662,18 +662,20 @@ a {
 
 
     .navbar-logo {
-        margin: auto;
-        margin-top: 48px;
+        margin-right: auto;
+        margin-top: 40px;
+        margin-left: auto;
+        margin-bottom: auto;
     }
 
     .ms-auto {
-        margin: auto;
+        margin: 0;
+        display: inline-block;
     }
 
 
     .navbar {
         flex-direction: column;
-        padding-bottom: 20px;
     }
 
     .navbar img {
@@ -685,20 +687,29 @@ a {
     .navbar ul {
         display: flex;
         list-style-type: none;
+        margin: auto;
+        text-align: center;
+        padding-left: 0;
+        padding-right: 0;
     }
 
     .navbar li {
-        margin-right: 77px;
+        flex: 1;
+        margin: auto;
         font-weight: 400;
         font-size: 16px;
         color: black;
+        border-bottom: 3px solid #f2f2f2;
+        padding-bottom: 23px;
     }
 
-    .ms-auto li:hover {
-        border-top: 2px solid blue;
-        color: blue;
+    .navbar li:hover {
+        border-top: none;
+        border-bottom: 3px solid blue;
     }
-
+    .ms-auto{ 
+        margin-left: 0;
+    }
     .intro {
         width: 100%;
         margin: auto;
@@ -781,20 +792,34 @@ a {
     .container-filter .buttons {
         margin: auto;
         flex-wrap: wrap;
+        width: 100%;
     }
-
+    .container-filter i{
+        font-size: 1rem;
+        padding-right: 0px;
+        padding-left: 0px;
+        border-left: 10px solid transparent;
+        border-right: 5px solid transparent;
+    }
     .container-filter button {
+        display: flex;
+        align-items: center;
+        margin-bottom: 15px;
         width: 160px;
         text-align: start;
         font-weight: 700;
-        font-size: 17px;
+        font-size: 11px;
         border-radius: 25px;
         padding-top: 14px;
         padding-bottom: 14px;
-        padding-left: 20px;
+        padding-left: 0px;
         padding-right: 20px;
         background-color: white;
         border: 2px solid #f2f2f2;
+    }
+    .info-all{ 
+        width: 90%;
+        margin-left: 15px;
     }
 
     .container-hebergements {
@@ -880,9 +905,11 @@ a {
     .card-vert {
         width: 100%;
     }
-    .bg-form{ 
+
+    .bg-form {
         background-position-y: 50%;
     }
+
     .limit-footer {
         margin: 0;
     }
