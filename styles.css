@@ -378,12 +378,13 @@ a {
     justify-content: start;
 }
 
-.four-stars i:nth-child(n + 2){
+.four-stars i:nth-child(n + 2) {
     font-size: 12px;
     padding-right: 2px;
     color: #0065FC;
 }
-.four-stars i:nth-child(1){
+
+.four-stars i:nth-child(1) {
     font-size: 12px;
     padding-right: 2px;
     color: #f2f2f2;
@@ -568,14 +569,16 @@ a {
     .navbar li {
         border-top: none;
     }
+
     .ms-auto li:hover {
         border-top: none;
         color: black !important;
     }
-    
+
     .ms-auto li a:hover {
         color: black;
     }
+
     .container-filter {
         width: 90%;
     }
@@ -728,6 +731,10 @@ a {
         border-top: none;
         border-bottom: 3px solid #f2f2f2;
         padding-bottom: 23px;
+    }
+
+    .ms-auto li a:hover {
+        color: #0065FC;
     }
 
     .navbar li:hover {
