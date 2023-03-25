@@ -292,7 +292,9 @@ a {
 }
 
 
-
+.euro { 
+    font-weight: 600;
+}
 .limit-cards {
     width: 70%;
     flex-wrap: wrap;
