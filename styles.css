@@ -826,7 +826,7 @@ a {
     .container-filter {
         width: 95%;
         flex-direction: column;
-        margin-left: 20px;
+        margin: auto;
     }
 
     .container-filter .buttons {
